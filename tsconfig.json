@@ -1,0 +1,21 @@
+{
+    "compilerOptions": {
+        "module": "CommonJS",
+        "target": "ES5",
+        "noImplicitAny": true,
+        // "sourceMap": true,
+        "outDir": "./lib",
+        "lib": ["DOM", "ES2015", "ES2016", "ES2017.Object", "ES2018.Promise"],
+        "declaration": true,
+        "declarationDir": "lib/@types"
+    },
+    "include": [
+        "./**/*"
+    ],
+    "exclude": [
+        "node_modules",
+        ".vscode",
+        "test",
+        "test/middlewares"
+    ]
+}
