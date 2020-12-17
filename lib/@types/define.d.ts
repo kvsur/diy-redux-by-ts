@@ -3,6 +3,7 @@ export declare type Dispatch = (action: Action) => void;
 export declare type ActionCreator = (...args: any[]) => Action;
 export declare type Reducer = (state: State, action: Action) => State;
 export declare type RCSF = (oldCreateStore: CreateStore) => CreateStore;
+/** 中间件是对 dispatch 的扩展，或者说重写，增强 dispatch 的功能 */
 export declare type Middleware = (store: Partial<Store>) => (next: Dispatch) => (action: Action) => void;
 export declare type CreateStore = (reducer: Reducer, initState?: State | RCSF, rewriteCreateStoreFn?: RCSF) => Store;
 export interface Reducers {
